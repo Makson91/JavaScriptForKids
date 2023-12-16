@@ -11,73 +11,92 @@
 
     <script>
 
-//         var dinosaur = [
-//             "Тираннозавр",
-//             "Велоцираптор",
-//             "Стегозавр",
-//             "Трицератопс",
-//             "Брахиозавр",
-//             "Птеранодон",
-//             "Апатозавр",
-//             "Диплодок",
-//             "Компсогнат"
-//         ];
+        //         var dinosaur = [
+        //             "Тираннозавр",
+        //             "Велоцираптор",
+        //             "Стегозавр",
+        //             "Трицератопс",
+        //             "Брахиозавр",
+        //             "Птеранодон",
+        //             "Апатозавр",
+        //             "Диплодок",
+        //             "Компсогнат"
+        //         ];
 
-//         var dinosaurs = [];
-//         dinosaurs[0] = "Тираннозавр";
-//         dinosaurs[1] = "Велоцираптор";
-//         dinosaurs[2] = "Стегозавр";
-//         dinosaurs[3] = "Трицератопс";
-//         dinosaurs[4] = "Брахиозавр";
-//         dinosaurs[5] = "Птеранодон";
-//         dinosaurs[6] = "Апатозавр";
-//         dinosaurs[7] = "Диплодок";
-//         dinosaurs[8] = "Компсогнат";
+        //         var dinosaurs = [];
+        //         dinosaurs[0] = "Тираннозавр";
+        //         dinosaurs[1] = "Велоцираптор";
+        //         dinosaurs[2] = "Стегозавр";
+        //         dinosaurs[3] = "Трицератопс";
+        //         dinosaurs[4] = "Брахиозавр";
+        //         dinosaurs[5] = "Птеранодон";
+        //         dinosaurs[6] = "Апатозавр";
+        //         dinosaurs[7] = "Диплодок";
+        //         dinosaurs[8] = "Компсогнат";
 
-//         var dinosaursAndNumbers = [3, "динозавры", ["трицератопс", "стегозавр", 3627.5], 10];
-//         dinosaursAndNumbers[2][0]; // - вернет из внутр. массива "трицератопс"
-//         document.write(dinosaursAndNumbers[dinosaursAndNumbers.length - 1]); // - вернет 10
+        //         var dinosaursAndNumbers = [3, "динозавры", ["трицератопс", "стегозавр", 3627.5], 10];
+        //         dinosaursAndNumbers[2][0]; // - вернет из внутр. массива "трицератопс"
+        //         document.write(dinosaursAndNumbers[dinosaursAndNumbers.length - 1]); // - вернет 10
 
-// //Добавление элемента в конец массива: .push
-// dinosaursAndNumbers.push("Компсогнат");
+        // //Добавление элемента в конец массива: .push
+        // dinosaursAndNumbers.push("Компсогнат");
 
-// //Добавление элемента в начало массива: .unshift
-// dinosaursAndNumbers.unshift("Диплодок");
+        // //Добавление элемента в начало массива: .unshift
+        // dinosaursAndNumbers.unshift("Диплодок");
 
-// //Убрать последний элемент из массива: .pop
-// dinosaursAndNumbers.pop();
+        // //Убрать последний элемент из массива: .pop
+        // dinosaursAndNumbers.pop();
 
-// //Убрать первый элемент из массива: .shift
-// dinosaursAndNumbers.shift();
+        // //Убрать первый элемент из массива: .shift
+        // dinosaursAndNumbers.shift();
 
-// //Объединение массивов: .concat
-// var furryAnimals = [];
-// var scalyAnimals = [];
-// var featheredAnimals = [];
-// var allAnimals = furryAnimals.concat(scalyAnimals, featheredAnimals);
+        // //Объединение массивов: .concat
+        // var furryAnimals = [];
+        // var scalyAnimals = [];
+        // var featheredAnimals = [];
+        // var allAnimals = furryAnimals.concat(scalyAnimals, featheredAnimals);
 
-// //Превращаем массив в строку: nameArray.join(" - "); Вернёт данные из массива в строку 
-// //                                                   через дефис с пробелами, вместо дефиса 
-// //                                                   можно выбрать все что угодно.
+        // //Превращаем массив в строку: nameArray.join(" - "); Вернёт данные из массива в строку 
+        // //                                                   через дефис с пробелами, вместо дефиса 
+        // //                                                   можно выбрать все что угодно.
 
-// Генерация случайных чисел: Math.random() * 10;
-// Округление числа: Math.floor(3.13213); - Округлит до 3
-// Math.floor(Math.random() * 4); - выпадет от 0 до 3
+        // Генерация случайных чисел: Math.random() * 10;
+        // Округление числа: Math.floor(3.13213); - Округлит до 3
+        // Math.floor(Math.random() * 4); - выпадет от 0 до 3
 
-// var randomWords = ["Взрыв", "Пещера", "Принцесса", "Карандаш"];
-// var randomIndex = Math.floor(Math.random() * 4);
-// randomwords[randomIndex];      или      randomWords[Math.floor(Math.random() * 4)];
-// "Пещера"
+        // var randomWords = ["Взрыв", "Пещера", "Принцесса", "Карандаш"];
+        // var randomIndex = Math.floor(Math.random() * 4);
+        // randomwords[randomIndex];      или      randomWords[Math.floor(Math.random() * 4)];
+        // "Пещера"
 
-var phrases = [
-    "звучит неплохо",
-    "да это определённо надо сделать",
-    "не думаю что это хорошая идея",
-    "может не сегодня",
-    "компьютер говорит нет"
-];
-document.write("выпить молочный коктейль?", '<br>');
-document.write(phrases[Math.floor(Math.random() * 5)]);
+        // var phrases = [
+        //     "звучит неплохо",
+        //     "да это определённо надо сделать",
+        //     "не думаю что это хорошая идея",
+        //     "может не сегодня",
+        //     "компьютер говорит нет"
+        // ];
+        // document.write("выпить молочный коктейль?", '<br>');
+        // document.write(phrases[Math.floor(Math.random() * 5)]);
+
+var menBodyParts = ["нога", "рука", "жопа", "голова"];
+var adjectives = ["кривая", "длинная", "красивая", "большая"];
+var animalBodyParts = ["нога", "рука", "жопа", "голова"];
+var animal = ["гуся", "собаки", "слона", "коровы"];
+
+var menBodyPart = menBodyParts[Math.floor(Math.random() * 4)];
+var adjective = adjectives[Math.floor(Math.random() * 4)];
+var animalBodyPart = animalBodyParts[Math.floor(Math.random() * 4)];
+var takeAnimal = animal[Math.floor(Math.random() * 4)];
+
+var randomInsult = "У тебя " + menBodyPart + " еще более " + adjective + ", чем " + animalBodyPart + " у " + takeAnimal;
+var randomInsultJoin = ["У тебя", menBodyPart, "еще более", adjective, "чем", animalBodyPart, "у", takeAnimal].join(" ");
+
+document.write(randomInsult, "<br>");
+document.write(randomInsultJoin, "<br>");
+
+var testArray = [3, 2, 1].join(" больше, чем ");
+document.write(testArray);
 
 
     </script>
