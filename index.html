@@ -1,27 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript For Kids</title>
+    <title>Logic Operations</title>
 </head>
+
 <body>
-    
-<script>
 
-var secondsinAMinute = 60;
-var minutesInAHour = 60;
-var secondsInAHour = secondsinAMinute * minutesInAHour;
-var hoursInADay = 24;
-var secondsInADay = secondsInAHour * hoursInADay;
-var daysInAYear = 365
-var secondsInAYear = secondsInADay * daysInAYear;
+    <script>
 
-var age = 32;
-var myAgeInASeconds = secondsInAYear * age;
-document.write(myAgeInASeconds);
+        //                             && || ! - и или не
+        //       var hadShower = true;
+        //       var hasBackpack = false;
+        //       hadShower && hasBackpack;
+        //       false
 
-</script>
+        //       var hasApple = true;
+        //       var hasOrange = false;
+        //       hasApple || hasOrange;
+        //       true
+
+        //       var isWeekend = true;
+        //       var needToShowerToday = !isWeekend;
+        //       needToShowerToday;
+        //       false
+
+        //       Операторы дают больше возможностей, если использовать их совместно. 
+        //       Допустим, вам нужно идти вшколу, если сегодня не выходной, и вы приняли душ,
+        //       и у вас с собой есть яблоко или апельсин. Вот как с помощью JavaScript 
+        //       проверить, выполняются ли все эти условия:
+
+        //       var isWeekend = false; 
+        //       var hadShower = true;
+        //       var hasApple = false;
+        //       var hasOrange = true;
+        //       var shouldGoToSchool = !isWeekend && hadShower && (hasApple || hasOrange); 
+        //       shouldGoToschool;
+        //       true
+
+        //       Точно так же как JavaScript выполняет умножение прежде сложения,
+        //       в логических выражениях он выполняет && прежде ||.
+
+        //       var height = 155; 
+        //       var heightRestriction = 150;
+        //       height >= heightRestriction;
+        //       true
+
+        //       var mySecretNumber = 5;
+        //       var chicoGuess = 3;
+        //       mySecretNumber === chicoGuess;
+        //       false
+
+        var age = 11;
+        var ageRestriction = 12;
+        var accompanied = true;
+
+        var lowage = age >= ageRestriction;
+        document.write(lowage, '<br>');
+
+        var enterAllowed = lowage || accompanied
+        document.write(enterAllowed);
+
+    </script>
 
 </body>
+
 </html>
