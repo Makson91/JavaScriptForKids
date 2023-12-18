@@ -4,52 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Objects</title>
+    <title>Cycle</title>
 </head>
 
 <body>
 
     <script>
 
-        //         var cat = {
-        //             legs: 3,
-        //             name: "Гармония",
-        //             color: "Черепаховый"
-        //         };
+        let grades = [5, 4, 3, 4];
 
-        //         cat["name"]; или  cat.name;
-        //         "Гармония"   или "Гармония"
+        for (let i = 0; i < grades.length; i++) {
+            document.write(grades[i], '<br>')
+        }
 
-        //         Object.keys(cat);
-        //         ["legs", "name", "color"]
-        // //---------------------------------------
-        //  Добавление ключей:
-        //         var cat = {};
-        //         cat["legs"] = 3;
-        //         cat["name"] = "Гармония";
-        //         cat["color"] = "Черепаховый";
-        //         cat;
-        //         { color: "Черепаховый", legs: 3, name: "Гармония" }
-        // //---------------------------------------
+        document.write('<br>');
+        //-----------------------------------------
+        let students = [
+            {
+                name: "Anna",
+                surname: "Smirnova",
+                birthYear: 1990
+            },
+            {
+                name: "Ivan",
+                surname: "Petrov",
+                birthYear: 1985
+            }
+        ];
+        for (let i = 0; i < students.length; i++) {
+            document.write(students[i].name, '<br>')
+        }
+        document.write('<br>');
 
-        // var scores = {
-        //     golova: 0,
-        //     sonia: 1,
-        //     olesia: 2,
-        //     ya: 3
-        // };
+        //-------------------------------------------
+        let shoppingLists = [
+            ["moloko", "hleb", "yaiza"],
+            ["sok", "morozhenoe"],
+            ["korm dlya kota", "shampun"]
+        ]
 
-        // document.write(scores.golova += 20);
-        // scores;
+        // extract subarrays from main array
+        for (let i = 0; i < shoppingLists.length; i++) {
+            let subarray = shoppingLists[i];
+            document.write('СПИСОК ', i + 1, '<br>');
+            document.write('--------', '<br>');
+            for (let j = 0; j < subarray.length; j++) {
+                let product = subarray[j];
+                document.write(j + 1, " - ",  product, '<br>');
 
-        // var myCrazyObject = {
-        //     "name": "Нелепый объект",
-        //     "some array": [7, 9, { purpose: "путаница", number: 123 }, 3.3],
-        //     "random animal": "Банановая акула"
-        // };
-        // myCrazyObject["some array"][2]["number"];
-        //                or
-        // myCrazyObject["some array"][2].number;
+            }
+            document.write('<br>');
+
+        }
+
+
+        let list = shoppingLists[0]; // i = 0
+        let product0 = list[0]; //j = 0
+        let product1 = list[1]; //j = 1
+        let product2 = list[2]; //j = 2
+
+        list = shoppingLists[1]; // i = 1
+        product0 = list[0]; // j = 0
+        product1 = list[1]; // j = 1
+
+        list = shoppingLists[2]; // i = 2
+        product0 = list[0]; // j = 0
+        product1 = list[1]; // j = 1
 
 
 
